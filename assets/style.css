@@ -15,6 +15,61 @@ ul {
 }
 
 /* begin Navigation & dropdown menu */
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(253, 253, 201);
+    padding: 0 50px;
+    transition: all 0.3s;
+}
+.item-menu{
+    position: relative;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 145px;
+    text-align:center;
+}
+.item-menu:hover{
+    background-color:rgb(0, 0, 0);
+    color: #FFF;
+}
+.item-menu:hover>a{
+    color: #FFF;
+}
+.second-menu{
+    display: none;
+    top: 64px;
+    transform: translateX(50%);
+    right:50%;
+    position: absolute;
+    background-color: #f2f2f2;
+    border-radius: 0px 0px 5px 5px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.item-menu:hover .second-menu{
+    display: block;
+    transition: 0.3s;
+}
+.second-menu li{
+    width: max-content;
+    min-width: 200px;
+    color: #000 !important;
+    transition: 0.3s;
+}
+.second-menu li a{
+    width: 100%;
+    padding: 10px 25px;
+    display: block;
+    color: #000;
+}
+.second-menu li:hover a{
+    color: #fff !important;
+    background-color: #000;
+}
 
 /* end Navigation & dropdown menu */
 
