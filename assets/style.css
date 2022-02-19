@@ -20,9 +20,10 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(253, 253, 201);
+    background-color:antiquewhite;
     padding: 0 50px;
     transition: all 0.3s;
+    border: solid 2px;
 }
 .item-menu{
     position: relative;
@@ -69,6 +70,21 @@ ul {
 .second-menu li:hover a{
     color: #fff !important;
     background-color: #000;
+}
+.sign_in{
+    position: absolute;
+    right: 2%;
+}
+.registration{
+    position: absolute;
+    right: 8.5%;
+}
+.sign_in button {
+    border-radius: 5%;
+}
+.registration button
+{
+    border-radius: 5%;
 }
 
 /* end Navigation & dropdown menu */
@@ -196,4 +212,33 @@ ul {
 .Contact-form button:hover {
     color: #5a49f8;
     background-color: #FFF;
+/* Content-box */
+}
+.content-box{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 90px;
+}
+.content-box .item{
+    width: calc(32% - 20px);
+    text-align: center;
+    padding: 30px;
+    background-color: antiquewhite;
+    margin: 0px 10px ;
+    border-radius: 16px;
+    border: solid 2px;
+    min-height: 350px
+}
+.content-box .item img {
+    width: 80%;
+    height: auto;
+}
+.content-box .item h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 10px;
+}
+.content-box .item p{
+    font-family:Arial, Helvetica, sans-serif;
 }
