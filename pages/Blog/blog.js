@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $(".order-btn").removeClass("active")
     $(".choose").addClass("active")
     
@@ -9,20 +10,19 @@ $(document).ready(function() {
     $(".order-btn a").click(function() {
         $(this).attr("href","../../index.html")
     })
-
     $(".instruct a").click(function() {
         $(this).attr("href", "../product/product.html")
     })
 })
 
 const listrender = document.getElementById("list-post");
-for(var i = 0; i<listpost.length;i++){
+for(var i = 0; i < listpost.length;i++){
     if (listrender) {
         const post = document.createElement("DIV");
         post.classList.add("post")
         post.innerHTML = `
         <div class="post-image">
-                <img src="${listpost[i].image_1}" alt="/">
+            <img src="${listpost[i].image_1}" alt="/">
         </div>
         <div class="post-content">
             <h3>${listpost[i].namepost}</h3>
@@ -69,8 +69,6 @@ function hotpost(array) {
     }
 }
 
-let NewArray = listpost.sort(function (a, b) { 
+hotpost(listpost.sort(function (a, b) { 
     return a.view - b.view; 
-});
-
-hostpost(NewArray.reverse()) 
+}).reverse()) 
