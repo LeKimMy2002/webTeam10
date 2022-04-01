@@ -1,19 +1,19 @@
-// $(document).ready(function() {
-//     $(".order-btn").removeClass("active")
-//     $(".choose").addClass("active")
+$(document).ready(function() {
     
-//     $(".order-btn a").html("Trang chủ")
-//     $(".instruct a").html("Đặt đồ ăn")
-//     $(".choose a").html("Công thức bếp")
+    $(".order-btn").removeClass("active")
+    $(".choose").addClass("active")
+    
+    $(".order-btn a").html("Trang chủ")
+    $(".instruct a").html("Đặt đồ ăn")
+    $(".choose a").html("Công thức bếp")
 
-//     $(".order-btn a").click(function() {
-//         $(this).attr("href","../../index.html")
-//     })
-
-//     $(".instruct a").click(function() {
-//         $(this).attr("href", "../product/product.html")
-//     })
-// })
+    $(".order-btn a").click(function() {
+        $(this).attr("href","../../index.html")
+    })
+    $(".instruct a").click(function() {
+        $(this).attr("href", "../product/product.html")
+    })
+})
 
 const listrender = document.getElementById("list-post");
 for(var i = 0; i < listpost.length;i++){
