@@ -1,6 +1,7 @@
 const footer = document.getElementById("footer")
 if(footer) {
     const myfooter = document.createElement("DIV")
+    myfooter.classList.add("footer")
     myfooter.innerHTML = `
         <div class="container">
             <div class="row">
