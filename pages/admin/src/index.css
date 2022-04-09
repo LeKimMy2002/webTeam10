@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #fe6333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  outline: none !important;
+  list-style: none !important;
+}
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Muli", sans-serif !important;
+  font-size: 16px;
+  background-color: #ffffff;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #111;
+}
+a:hover, a:focus {
+  color: #222222;
+  text-decoration: none !important;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0px;
+}
+li {
+  list-style: none;
+}
+.content {
+  flex: 1;
+}
+.box {
+  margin: 100px 0px 0px 280px;
+  padding: 25px 25px;
+  background-color: #fbfbfb;
+}

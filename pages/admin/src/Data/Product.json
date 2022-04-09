@@ -1,0 +1,181 @@
+[
+    {
+        "id":"50",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Cà phê đen",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/blackcofe.jpg"
+    },
+    {
+        "id":"51",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Cà phê sữa",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/milkcofe.jpg"
+    },
+    {
+        "id":"52",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Nước ép việt quất",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/blueberry.jpg"
+    },
+    {
+        "id":"53",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Nước ép trái cây",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/nuoceptraicay.jpg"
+    },
+    {
+        "id":"54",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Đồ uống có ga",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/softdrink.jpg"
+    },
+    {
+        "id":"55",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Sinh tố bơ",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/sinhtobo.jpg"
+    },
+    {
+        "id":"56",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Sinh tố matcha",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/sinhtomatcha.jpg"
+    },
+    {
+        "id":"57",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Mojito Soda",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/soda.jpg"
+    },
+    {
+        "id":"58",
+        "type_prd":"drink",
+        "type":"Đồ uống",
+        "name":"Trà đào cam sả",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "image":"../../assets/img/product/drink/tradaocamsa.jpg"
+    },
+    {
+        "id":"59",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"COCONUT CAKE",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Fruit-01.png"
+    },
+    {
+        "id":"60",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"FRUIT CAKE",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Fruit-02.png"
+    },
+
+    {
+        "id":"61",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"33",
+        "name":"RED VELVET CAKE VUÔNG",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Fruit-03.png"
+
+    },
+
+    {
+        "id":"62",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"FRESH FRUIT",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Fruit-04.png"
+    },
+
+    {
+        "id":"63",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"30",
+        "name":"RED VELVET CAKE TRÒN",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Fruit-05.png"
+    },
+    {
+        "id":"64",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"GREENTEA CAKE 3",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-GreenTea-01.png"
+    },
+
+    {
+        "id":"65",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"GREENTEA CAKE 2",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-GreenTea-02.png"
+    },
+
+    {
+        "id":"66",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"27",
+        "name":"GREENTEA CAKE LOVE",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-GreenTea-03.png"
+    },
+
+    {
+        "id":"67",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"30",
+        "name":"TIRAMISU VUÔNG",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Socola-01.png"
+    },
+
+    {
+        "id":"68",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"CAPUCCINO",
+        "adress":"Đại học Thuỷ Lợi",
+        "image":"../../assets/img/product/cake/Cake-Socola-02.png"
+    }
+]
