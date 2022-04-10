@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from "../../Components/Header/Header"
-import Table from "../../Components/Table/orderTable"
+import Table from "../../Components/Table/menuTable"
 const OrderList = () => {
   return (
     <>
     <div className="content">
-      <Header title="Order List"/>
+      <Header title="Menu List"/>
       <div className="box">
         <Table />
       </div>

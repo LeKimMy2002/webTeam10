@@ -39,7 +39,6 @@ const Navigation = () => {
                     return <li key={index}><NavLink className={(navData) => navData.isActive ? "w-100 text-center d-block active-nav" : "w-100 text-center d-block" } key={index} to={`/${elm.url}`}>{elm.item}</NavLink></li>
                 })}                                     
             </ul>
-            <div className="position-absolute"><i className="fa-solid fa-gear"></i></div>
         </div>
     </div>
     </>
