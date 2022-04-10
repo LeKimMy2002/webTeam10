@@ -6,7 +6,8 @@
         "name":"Cà phê đen",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/blackcofe.jpg"
+        "count": 0,
+        "image":"/images/product/drink/blackcofe.jpg"
     },
     {
         "id":"51",
@@ -15,7 +16,8 @@
         "name":"Cà phê sữa",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/milkcofe.jpg"
+        "count": 22,
+        "image":"/images/product/drink/milkcofe.jpg"
     },
     {
         "id":"52",
@@ -24,7 +26,8 @@
         "name":"Nước ép việt quất",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/blueberry.jpg"
+        "count": 16,
+        "image":"/images/product/drink/blueberry.jpg"
     },
     {
         "id":"53",
@@ -33,7 +36,8 @@
         "name":"Nước ép trái cây",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/nuoceptraicay.jpg"
+        "count": 31,
+        "image":"/images/product/drink/nuoceptraicay.jpg"
     },
     {
         "id":"54",
@@ -42,7 +46,8 @@
         "name":"Đồ uống có ga",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/softdrink.jpg"
+        "count": 120,
+        "image":"/images/product/drink/softdrink.jpg"
     },
     {
         "id":"55",
@@ -51,7 +56,8 @@
         "name":"Sinh tố bơ",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/sinhtobo.jpg"
+        "count": 0,
+        "image":"/images/product/drink/sinhtobo.jpg"
     },
     {
         "id":"56",
@@ -60,7 +66,8 @@
         "name":"Sinh tố matcha",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/sinhtomatcha.jpg"
+        "count": 44,
+        "image":"/images/product/drink/sinhtomatcha.jpg"
     },
     {
         "id":"57",
@@ -69,7 +76,8 @@
         "name":"Mojito Soda",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/soda.jpg"
+        "count": 100,
+        "image":"/images/product/drink/soda.jpg"
     },
     {
         "id":"58",
@@ -78,7 +86,8 @@
         "name":"Trà đào cam sả",
         "adress":"Đại học Thuỷ Lợi",
         "price":"15",
-        "image":"../../assets/img/product/drink/tradaocamsa.jpg"
+        "count": 120,
+        "image":"/images/product/drink/tradaocamsa.jpg"
     },
     {
         "id":"59",
@@ -87,7 +96,8 @@
         "price":"22",
         "name":"COCONUT CAKE",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Fruit-01.png"
+        "count": 1,
+        "image":"/images/product/cake/Cake-Fruit-01.png"
     },
     {
         "id":"60",
@@ -96,7 +106,8 @@
         "price":"22",
         "name":"FRUIT CAKE",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Fruit-02.png"
+        "count": 0,
+        "image":"/images/product/cake/Cake-Fruit-02.png"
     },
 
     {
@@ -106,7 +117,8 @@
         "price":"33",
         "name":"RED VELVET CAKE VUÔNG",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Fruit-03.png"
+        "count": 12,
+        "image":"/images/product/cake/Cake-Fruit-03.png"
 
     },
 
@@ -117,7 +129,8 @@
         "price":"22",
         "name":"FRESH FRUIT",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Fruit-04.png"
+        "count": 26,
+        "image":"/images/product/cake/Cake-Fruit-04.png"
     },
 
     {
@@ -127,7 +140,8 @@
         "price":"30",
         "name":"RED VELVET CAKE TRÒN",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Fruit-05.png"
+        "count": 0,
+        "image":"/images/product/cake/Cake-Fruit-05.png"
     },
     {
         "id":"64",
@@ -136,9 +150,9 @@
         "price":"22",
         "name":"GREENTEA CAKE 3",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-GreenTea-01.png"
+        "count": 36,
+        "image":"/images/product/cake/Cake-GreenTea-01.png"
     },
-
     {
         "id":"65",
         "type_prd":"cake",
@@ -146,7 +160,8 @@
         "price":"22",
         "name":"GREENTEA CAKE 2",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-GreenTea-02.png"
+        "count": 126,
+        "image":"/images/product/cake/Cake-GreenTea-02.png"
     },
 
     {
@@ -156,7 +171,8 @@
         "price":"27",
         "name":"GREENTEA CAKE LOVE",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-GreenTea-03.png"
+        "count": 11,
+        "image":"/images/product/cake/Cake-GreenTea-03.png"
     },
 
     {
@@ -166,9 +182,9 @@
         "price":"30",
         "name":"TIRAMISU VUÔNG",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Socola-01.png"
+        "count": 99,
+        "image":"/images/product/cake/Cake-Socola-01.png"
     },
-
     {
         "id":"68",
         "type_prd":"cake",
@@ -176,6 +192,105 @@
         "price":"22",
         "name":"CAPUCCINO",
         "adress":"Đại học Thuỷ Lợi",
-        "image":"../../assets/img/product/cake/Cake-Socola-02.png"
+        "count": 0,
+        "image":"/images/product/cake/Cake-Socola-02.png"
+    },
+    {
+        "id":"69",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"22",
+        "name":"TIRAMISU",
+        "adress":"Đại học Thuỷ Lợi",
+        "count":16,
+        "image":"../../assets/img/product/cake/Cake-Socola-03.png"
+    },
+
+    {
+        "id":"70",
+        "type_prd":"cake",
+        "type":"Bánh ngọt",
+        "price":"30",
+        "name":"CHOCOLATE FRESH CREAM CAKE",
+        "adress":"Đại học Thuỷ Lợi",
+        "count":18,
+        "image":"../../assets/img/product/cake/Cake-Socola-04.png"
+    },
+
+    {
+        "id":"71",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm gà kho gừng",
+        "adress":"Long bien, Ha Noi",
+        "count":36,
+        "image":"../../assets/img/product/com/comgakhogung.jpg"
+    },
+
+    {   
+        "id":"72",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm xườn rim tiêu",
+        "adress":"Long Bien, Ha Noi",
+        "count":0,
+        "image":"../../assets/img/product/com/comxuon.jpg"
+    },
+
+    {   
+        "id":"73",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm cá kho tiêu ba chỉ",
+        "adress":"Long Bien, Ha Noi",
+        "count":30,
+        "image":"../../assets/img/product/com/comcakho.jpg"
+    },
+
+    {   
+        "id":"74",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm thịt quay",
+        "adress":"Long Bien, Ha Noi",
+        "count":21,
+        "image":"../../assets/img/product/com/comthitquay.jpg"
+    },
+
+    {   
+        "id":"75",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm thịt kho trứng",
+        "adress":"Long Bien, Ha Noi",
+        "count":16,
+        "image":"../../assets/img/product/com/comthitkhotrung.jpg"
+    },
+
+    {   
+        "id":"76",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm gà chiên nước mắm",
+        "adress":"Long Bien, Ha Noi",
+        "count":0,
+        "image":"../../assets/img/product/com/comgachiennuocmam.jpg"
+    },
+
+    {   
+        "id":"77",
+        "type_prd":"comhop",
+        "type":"Cơm hộp",
+        "price":"30",
+        "name":"Cơm đậu thịt sốt cà chua",
+        "adress":"Long Bien, Ha Noi",
+        "count":11,
+        "image":"../../assets/img/product/com/comthitdauxotcachua.jpg"
     }
 ]

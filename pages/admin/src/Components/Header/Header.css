@@ -73,6 +73,12 @@
 .header-toast > li ul li:hover {
     background-color: red;
 }
+.header-toast > li ul li a {
+    color: #111;
+}
+.header-toast > li ul li:hover a {
+    color: #fff;
+}
 .header-toast li ul img {
     width: 55px;
     margin-right: 10px;

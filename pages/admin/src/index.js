@@ -19,8 +19,8 @@ root.render(
       <Nav />
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/add-post" element={<AddPost />} />
+          <Route exact path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/add-post" element={<AddPost />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/member" element={<Member />} />
           <Route path="/orders-list" element={<OrderList />} />

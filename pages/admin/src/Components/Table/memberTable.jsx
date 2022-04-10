@@ -2,7 +2,6 @@ import { Table, Button, Pagination } from 'rsuite';
 import React from 'react';  
 import 'rsuite/dist/rsuite.min.css';
 import "./Table.css";
-import { useForm } from 'react-hook-form';
 import Data from "../../Data/Member.json";
 
 const App = () => {
@@ -16,8 +15,6 @@ const App = () => {
 
   const [modal, setModal] = React.useState(false);
   const [dataModal, setModalData] = React.useState({});
-
-  const [newMember, setNewMember] = React.useState({})
 
   const handleChangeLimit = dataKey => {
     setPage(1);
@@ -91,7 +88,7 @@ const App = () => {
         </Button>
         <Button className="mx-1 position-relative action-button" 
           onClick={() => {
-            setData(data.filter(item => item.id != rowData.id)); setModal(false)
+            setData(data.filter(item => item.id !== rowData.id)); setModal(false)
           }}
         ><span className="action-cell"><i className="fa-solid fa-trash-can"></i></span></Button>
       </Cell>
@@ -116,7 +113,7 @@ const App = () => {
       <div className={modal ? "d-block":"d-none"}>
         <div className="modal-container">
           <div className="modal-overley"></div>
-          <div className="row modal-box py-3 align-items-center position-relative">
+          <div style={{animation: 'none'}} className="row modal-box py-3 align-items-center position-relative">
             <div onClick={() => setModal(modal ? false:true)} className="position-absolute times-button text-center"><i className="fa-solid fa-xmark"></i></div>
             <div className="col-4"><img className="w-100" src={dataModal.avatar} alt={dataModal.name} /></div>
             <div className="col-8">
@@ -136,49 +133,74 @@ const App = () => {
     );
   }
 
-  const addmember = () => {
-    let member  = {}
-  }
+  const [member, setMember] = React.useState(false)
+  const [newMember, setNewMember] = React.useState({ id:"", name:"", position:"", phone:"", email:"", adress:"", salary:"" })
 
-  const onSubmit = (data) => console.log(data);
-  const { register, handleSubmit, formState: { errors }, } = useForm();
+  const ModalTwo = () => {
+    return (
+      <>
+      {member && (<div className="d-block">
+        <div className="modal-container">
+          <div className="modal-overley"></div>
+          <div className="row modal-box py-3 align-items-center position-relative">
+            <div onClick={() => setMember(false)} className="position-absolute times-button text-center"><i className="fa-solid fa-xmark"></i></div>
+            <div className="w-100 text-center add-member-form">
+                <h4 className="mb-2">Thêm một thành viên mới</h4>
+                <div>
+                  <input type="text" placeholder="Mã nhân viên" 
+                    value={ newMember.id }
+                    onChange={e => setNewMember({...newMember, id: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Họ và tên" 
+                    value={ newMember.name }
+                    onChange={e => setNewMember({...newMember, name: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Chức vụ" 
+                    value={ newMember.position }
+                    onChange={e => setNewMember({...newMember, position: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Số điện thoại" 
+                    value={ newMember.phone }
+                    onChange={e => setNewMember({...newMember, phone: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Email" 
+                    value={ newMember.email }
+                    onChange={e => setNewMember({...newMember, email: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Địa chỉ" 
+                    value={ newMember.adress }
+                    onChange={e => setNewMember({...newMember, adress: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="Lương" 
+                    value={ newMember.salary }
+                    onChange={e => setNewMember({...newMember, salary: e.target.value})}
+                  />
+                </div>
+                <button onClick={() => {setData(prev => [newMember, ...prev]); setMember(false)}} className="submit-btn" type="submit">Thêm vào</button>
+            </div>
+          </div>
+        </div>
+      </div>)}
+      </>
+    );
+  }
 
   return (
     <>
     <div className="add-member">
-      <button onClick={addmember}>Thêm Nhân Viên</button>
-      <form onSubmit={handleSubmit(onSubmit)} className="w-100 text-center">
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-          <div>
-            <input {...register('username', { required: true })} type="text" placeholder="Tên Đăng Nhập" />
-            {errors.username && <p>Hãy nhập tài khoản của bạn</p>}
-          </div>
-
-          <button type="submit">Thêm</button>
-      </form>
+      <button onClick={() => setMember(true)}>Thêm Nhân Viên</button>
     </div>
     <Table
       height={460}
@@ -225,10 +247,8 @@ const App = () => {
       </Column>
     </Table>
     <div className="pagination-box">
-        {
-            data.length === 0 || data.length < limit 
-            ? 
-            "" : 
+      {
+            data &&
             <Pagination
                 prev
                 next
@@ -249,6 +269,7 @@ const App = () => {
         }
     </div>
     <Modal/>
+    <ModalTwo />
     </>
   );
 };

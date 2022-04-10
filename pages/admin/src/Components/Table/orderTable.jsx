@@ -78,7 +78,7 @@ const App = () => {
       <Cell {...props} style={{ padding: '6px' }} className="text-center">
         <Button className="mx-1" 
           onClick={() => {
-            setData(data.filter(item => item.id != rowData.id))
+            setData(data.filter(item => item.id !== rowData.id))
           }}
         ><span className="action-cell"><i className="fa-solid fa-trash-can"></i></span></Button>
       </Cell>
@@ -131,32 +131,8 @@ const App = () => {
       </Column>
     </Table>
     <div className="pagination-box">
-        {
-            data && data.length < limit 
-            ? 
-            "" : 
-            <Pagination
-                prev
-                next
-                first
-                last
-                ellipsis
-                boundaryLinks
-                maxButtons={5}
-                size="xs"
-                layout={[ '-', 'pager']}
-                total={Data.length}
-                limitOptions={[10, 20]}
-                limit={limit}
-                activePage={page}
-                onChangePage={setPage}
-                onChangeLimit={handleChangeLimit}
-            />
-        }
-        {
-            page === 1 
-            ? 
-            "" : 
+      {
+            data &&
             <Pagination
                 prev
                 next

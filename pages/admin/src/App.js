@@ -52,7 +52,7 @@ function App() {
                       <span>{kpi.map(item => (Math.floor(item.money / item.KPI * 100)))}%</span>
                       <div className="slice"><div className="bar"></div><div className="fill"></div></div>
                   </div>
-                <h4>${kpi.map(item => (item.money))}</h4>
+                <h4>${kpi.map(item => (item.money)) > 1000 ? kpi.map(item => (item.money)) / 1000 : kpi.map(item => (item.money))}</h4>
                 <span className="d-inline-block">from ${kpi.map(item => (item.KPI))}</span>
               </div>
               <div className="related-food">
