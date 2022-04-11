@@ -93,7 +93,7 @@
     bottom: -8px;
     left: 10px;
 }
-.add-member-form div input {
+.add-member-form div input, .search-input input {
     outline: none;
     width: 100%;
     padding: 5px 10px;

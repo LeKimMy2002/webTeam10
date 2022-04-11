@@ -2,9 +2,112 @@ import { Table, Button, Pagination } from 'rsuite';
 import React from 'react';  
 import 'rsuite/dist/rsuite.min.css';
 import "./Table.css";
-import Data from "../../Data/Product.json";
+// import Data from "../../Data/Product.json";
 
 const App = () => {
+  let Data = [
+    {
+        "id":"50",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Buffet Hải sản",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 0,
+        "image":"/images/product/Dịch vụ cơ bản/blackcofe.jpg"
+    },
+    {
+        "id":"51",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Buffet Thập cẩm",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 22,
+        "image":"/images/product/Dịch vụ cơ bản/milkcofe.jpg"
+    },
+    {
+        "id":"52",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Buffet Bánh ngọt",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 16,
+        "image":"/images/product/Dịch vụ cơ bản/blueberry.jpg"
+    },
+    {
+        "id":"53",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Giặt quần áo",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 31,
+        "image":"/images/product/Dịch vụ cơ bản/nuoceptraicay.jpg"
+    },
+    {
+        "id":"54",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Dọn dẹp phòng",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 120,
+        "image":"/images/product/Dịch vụ cơ bản/softDịch vụ cơ bản.jpg"
+    },
+    {
+        "id":"55",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Thuê xe tự lái",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 0,
+        "image":"/images/product/Dịch vụ cơ bản/sinhtobo.jpg"
+    },
+    {
+        "id":"56",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Thuê hướng dẫn viên du lịch",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 44,
+        "image":"/images/product/Dịch vụ cơ bản/sinhtomatcha.jpg"
+    },
+    {
+        "id":"57",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Dịch vụ Spa tại phòng",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 100,
+        "image":"/images/product/Dịch vụ cơ bản/soda.jpg"
+    },
+    {
+        "id":"57",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Quầy bar",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 100,
+        "image":"/images/product/Dịch vụ cơ bản/soda.jpg"
+    },
+    {
+        "id":"57",
+        "type_prd":"Dịch vụ cơ bản",
+        "type":"Dịch vụ cơ bản",
+        "name":"Phòng GYM",
+        "adress":"Đại học Thuỷ Lợi",
+        "price":"15",
+        "count": 100,
+        "image":"/images/product/Dịch vụ cơ bản/soda.jpg"
+    }
+  ]
+
   const {Column, Cell, HeaderCell} = Table;
   const [sortColumn, setSortColumn] = React.useState();
   const [sortType, setSortType] = React.useState();
@@ -28,7 +131,7 @@ const App = () => {
             return i >= start && i < end;
         })
     )
-  }, [page, limit])
+  }, [page])
 
   const handleChangeLimit = dataKey => {
     setPage(1);
@@ -67,7 +170,7 @@ const App = () => {
     return (
       <Cell {...props} style={{ padding: '6px' }} className="text-center">
         <span className={`status-${rowData[dataKey] === 0 ? "false" : "true"} d-inline-block`}>
-            {rowData[dataKey] === 0 || rowData[dataKey] === undefined ? "Hết hàng" : "Còn Hàng"}
+            {rowData[dataKey] === 0 || rowData[dataKey] === undefined ? "Tạm đóng" : "Đang mở"}
         </span>
       </Cell>
     );
@@ -143,21 +246,9 @@ const App = () => {
                   />
                 </div>
                 <div>
-                  <input type="text" placeholder="Loại sản phẩm" 
-                    value={ addNew.type }
-                    onChange={e => setaddNew({...addNew, type: e.target.value})}
-                  />
-                </div>
-                <div>
                   <input type="text" placeholder="Tên sản phẩm" 
                     value={ addNew.name }
                     onChange={e => setaddNew({...addNew, name: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <input type="text" placeholder="Địa chỉ" 
-                    value={ addNew.adress }
-                    onChange={e => setaddNew({...addNew, adress: e.target.value})}
                   />
                 </div>
                 <div>
@@ -167,7 +258,7 @@ const App = () => {
                   />
                 </div>
                 <div>
-                  <input type="text" placeholder="Số lượng" 
+                  <input type="text" placeholder="Trạng thái" 
                     value={ addNew.count }
                     onChange={e => setaddNew({...addNew, count: e.target.value})}
                   />
@@ -185,10 +276,11 @@ const App = () => {
     <>
     <div className="change-filter">
         <span className={filter === "Tất cả" ? "active-filter":""} onClick={()=> {setData(Data.filter(item => item)); setFilter("Tất cả")}}>Tất cả</span>
-        <span className={filter === "Hàng còn" ? "active-filter":""} onClick={()=> {setData(Data.filter(item => item.count > 0)); setFilter("Hàng còn")}}>Hàng còn</span>
-        <span className={filter === "Hàng hết" ? "active-filter":""} onClick={()=> {setData(Data.filter(item => item.count === 0)); setFilter("Hàng hết")}}>Hàng hết</span>
-        <span onClick={() => setNewProduct(true)}>Thêm sản phẩm</span>
-
+        <span onClick={() => setNewProduct(true)}>Thêm dịch vụ</span>
+    </div>
+    <div className="search-input position-relative mb-3">
+        <input className="w-50" placeholder="Bạn muốn tìm gì" />
+        <button className="ms-3">Tìm kiếm</button>
     </div>
     <Table
       height={460}
@@ -198,24 +290,20 @@ const App = () => {
       onSortColumn={handleSortColumn}
     >
       <Column width={120} align="center">
-        <HeaderCell>Id</HeaderCell>
+        <HeaderCell>Mã dịch vụ</HeaderCell>
         <Cell dataKey="id" />
       </Column>
       <Column width={200} align="center">
-        <HeaderCell>Loại</HeaderCell>
+        <HeaderCell>Loại dịch vụ</HeaderCell>
         <Cell dataKey="type" />
       </Column>
-      <Column width={250} align="center">
-        <HeaderCell>Tên món ăn</HeaderCell>
-        <EditCell dataKey="name"  onChange={handleChange}/>
+      <Column width={220} align="center">
+        <HeaderCell>Tên dịch vụ</HeaderCell>
+        <EditCell dataKey="name" onChange={handleChange}/>
       </Column>
-      <Column width={200} align="center">
-        <HeaderCell>Địa chỉ</HeaderCell>
-        <EditCell dataKey="adress"  onChange={handleChange}/>
-      </Column>
-      <Column width={120} align="center" sortable>
-        <HeaderCell>Đơn giá ($)</HeaderCell>
-        <EditCell dataKey="price"  onChange={handleChange}/>
+      <Column width={150} align="center" sortable>
+        <HeaderCell>Đơn giá (VNĐ)</HeaderCell>
+        <EditCell dataKey="count" onChange={handleChange}/>
       </Column>
       <Column width={140} align="center">
         <HeaderCell>Trạng thái</HeaderCell>

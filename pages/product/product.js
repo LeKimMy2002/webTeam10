@@ -42,7 +42,7 @@ function renderPRD(array) {
             const item = document.createElement("DIV")
             item.classList.add("product-item","col","col-xl-3","col-lg-3","col-sm-4","col-6")
             item.innerHTML = `
-                <a onclick="getlocalPRD(${array[i].id})" class="product" href="../detailsproduct/detail.html">
+                <a onclick="getlocalPRD(${array[i].id})" class="product" href="../detailProduct/detailProduct.html">
                     <div class="product-img">
                         <img src="${array[i].image}" alt="/">
                     </div>
@@ -106,15 +106,15 @@ function option(n) {
     localStorage.setItem("mytype", n)
 }
 
-let searcharray = []
-function searchPRD() {
-    var nameprd = localStorage.getItem("search")
-    for(var i = 0; i < data.length; i++) {
-        if(nameprd === data[i].name) {
-            searcharray.push(data[i])
-        }
-    }
-    renderPRD(searcharray)
-}
+// let searcharray = []
+// function searchPRD() {
+//     var nameprd = localStorage.getItem("search")
+//     for(var i = 0; i < data.length; i++) {
+//         if(nameprd === data[i].name) {
+//             searcharray.push(data[i])
+//         }
+//     }
+//     renderPRD(searcharray)
+// }
 
-searchPRD();
+// searchPRD();

@@ -1,11 +1,10 @@
-
 function mylist(obj, array ,content) {
     for(var i = 0; i < array.length; i++) {
         if(obj) {
             const item = document.createElement("DIV")
-            item.classList.add("item-product","col","col-xl-4","col-lg-4","col-sm-4","col-6")
+            item.classList.add("item-product","col-12","col-sm-4")
             item.innerHTML = `
-                <a onclick="getlocalPRD(${array[i].id})" href="./pages/detailsproduct/detail.html">
+                <a onclick="getlocalPRD(${array[i].id})" href="./pages/detailProduct/detailProduct.html">
                     <div><img src='${array[i].image}' alt="/"></div>
                     <div class="infor-restaurant">
                         <h4>${array[i].name}</h4>
@@ -32,9 +31,3 @@ function viewlist(n) {
 function getlocalPRD(n) {
     localStorage.setItem("detailsPRD", n)
 }
-const search = document.getElementById("search-prd"),
-      button = document.getElementById("search-action");
-button.addEventListener("click", function() {
-    localStorage.setItem("search", search.value)
-})
-localStorage.removeItem("mytype");

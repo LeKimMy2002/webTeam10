@@ -13,48 +13,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./detailBlog.css">
+    <link rel="stylesheet" href="./detailProduct.css">
     <link rel="stylesheet" href="../../../assets/style/style.css">
 </head>
 <body>
     <header class="header header-active" id="header">
     </header>
 
-    <div class="blog-main">
-        <div class="blog-bgr">
-            <img src="../../assets/img/Blog/bottom-intro.jpg" alt="">
-        </div>
-        <div class="container my-post">
+    <div class="detail-main">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="detail-post" id="details-post">
-                        
+                <div class="col-12 col-lg-8">
+                    <div class="detail-product-container" id="detail">
                     </div>
                 </div>
-                <div class="col-lg-4 mt-50">
-                    <h2>Những bài viết nổi bật</h2>
-                    <div class="hot-post" id="host-post">
-                        
-                    </div>
 
-                    <div class="option">
-                        <h3>Bạn thiếu gia vị không ?</h3>
-                        <a href="#" class="buy-now">Mua ngay</a>
+                <div class="col-lg-4">
+                    <div class="my-cart">
+                        <h3>Giỏ hàng</h3>
+                        <div class="list-cart" id="cart">
+                        </div>
+
+                        <div class="checkout-box">
+                            <a href="../Payment/Payment.html" class='checkout' id='checkout'> Thanh toán ngay </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+                
+    <div class="more-main">
+        <div class="container">
+            <div class="col-12">
+                
+            </div>
+        </div>
+    </div>
+
     <footer id="footer">
-    </footer>   
+    </footer>
 
     <div id="myModal"></div>
-
-    <script src="../../assets/Data/postData.js"></script>
+    
+    <script src="../../assets/Data/allProduct.js"></script>
     <script src="../../assets/js/header.js"></script>
     <script src="../../assets/js/index.js"></script>
     <script src="../../assets/js/footer.js"></script>
     <script src="../../assets/js/modal.js"></script>
-    <script src="./detailBlog.js"></script>
+    <script src="./detailProduct.js"></script>
 </body>
 </html>
+
+
+<!--  -->
