@@ -10,9 +10,10 @@ import Customers from "./Pages/Customer/Customer"
 import Member from "./Pages/Member/Member" 
 import OrderList from "./Pages/orderList/orderList";
 import MenuList from "./Pages/menuList/menuList"
-import AddPost from "./Pages/addPost/addPost"
+import AddPost from "./Pages/addPost/addPost";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <Router>
     <div className="d-flex">
@@ -25,6 +26,7 @@ root.render(
           <Route path="/member" element={<Member />} />
           <Route path="/orders-list" element={<OrderList />} />
           <Route path="/menu-list" element={<MenuList />} />
+          <Route path="/new" element={<MenuList />} />
         </Routes>
     </div>
   </Router>

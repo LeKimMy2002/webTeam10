@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    
     $(".order-btn").removeClass("active")
     $(".choose").addClass("active")
     
@@ -15,8 +14,8 @@ $(document).ready(function() {
     })
 })
 
-const listrender = document.getElementById("list-post");
 for(var i = 0; i < listpost.length;i++){
+    const listrender = document.getElementById("list-post");
     if (listrender) {
         const post = document.createElement("DIV");
         post.classList.add("post")
@@ -45,8 +44,9 @@ for(var i = 0; i < listpost.length;i++){
 function detailspost(n){
     localStorage.setItem("linkpost",n)
 }
-const listhot = document.getElementById("hot-post") 
+
 function hotpost(array) {
+    const listhot = document.getElementById("hot-post") 
     for(var i = 0; i < array.length; i++) {
         if(listhot) {
             const item = document.createElement("DIV")
@@ -56,7 +56,7 @@ function hotpost(array) {
                     <img src="${array[i].image_1}" alt="/">
                 </div>
                 <div>
-                    <a href='../detailBlog/detailBlog.html' onclick='detailspost(${listpost[i].id})'>${array[i].namepost}</a>
+                    <a href='../detailBlog/detailBlog.html' onclick='detailspost(${array[i].id})'>${array[i].namepost}</a>
                     <p>${array[i].description}</p>
                     <span><i class="far fa-eye"></i><span>${array[i].view}</span></span>
                 </div>
