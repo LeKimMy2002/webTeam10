@@ -18,7 +18,7 @@
     color: #111;
 }
 .nav-container > a span {
-    color: red;
+    color: #fe6333;
 }
 .nav-option {
     padding: 20px 35px;
@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 .nav-option > div:hover {
-    color: red;
+    color: #fe6333;
     transition: all .4s;
 }
 .nav-option ul li a {
@@ -45,10 +45,10 @@
     text-transform: capitalize;
 }
 .nav-option ul li a:hover {
-    background-color: red;
+    background-color: #fe6333;
     color: #FFF;
 }
 .nav-option ul li a.active-nav {
-    background-color: red;
+    background-color: #fe6333;
     color: #FFF;
 }

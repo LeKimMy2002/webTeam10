@@ -16,6 +16,10 @@
     margin: 0px 10px;
     padding: 0px 15px;
 }
+.toast-img {
+    height: 60px;
+    object-fit: cover;
+}
 .header-toast > li > span {
     padding: 10px;
     margin: 0px 20px;
@@ -71,7 +75,7 @@
     margin-bottom: 0px;
 }
 .header-toast > li ul li:hover {
-    background-color: red;
+    background-color: #fe6333;
 }
 .header-toast > li ul li a {
     color: #111;

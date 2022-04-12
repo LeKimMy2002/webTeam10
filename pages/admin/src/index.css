@@ -63,7 +63,7 @@ li {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
 .modal-box {
@@ -72,7 +72,6 @@ li {
   background-color:#fff;
   z-index: 100;
   border-radius: 10px;
-  /* animation: ZoomOut 0.5s ease; */
 }
 .modal-box img {
   height: 220px;

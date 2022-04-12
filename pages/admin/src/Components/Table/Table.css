@@ -6,7 +6,7 @@
     top: -8px;
 }
 .add-member button, .submit-btn {
-    border: 2px solid red;
+    border: 2px solid #fe6333;
     background-color: #FFF;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -14,14 +14,14 @@
     transition: .3s ease;
 }
 .add-member button:hover, .submit-btn:hover {
-    background-color: red;
+    background-color: #fe6333;
     color: #FFF;
 }
 .action-cell i {
     font-size: 18px;
 }
 .action-cell i.edit {
-    color: red;
+    color: #fe6333;
 }
 .action-cell i.save {
     color: #51f221;
@@ -57,7 +57,7 @@
     margin-bottom: 25px;
 }
 .change-filter span {
-    border: 2px solid red;
+    border: 2px solid #fe6333;
     background-color: #FFF;
     padding: 10px 15px;
     margin-right: 10px;
@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 .change-filter span:hover, span.active-filter {
-    background-color: red;
+    background-color: #fe6333;
     color: #FFF;
 }
 .rs-table-row {
@@ -78,7 +78,7 @@
     z-index: 2 !important;
 }
 .modal-box .col-8 > span {
-    color: red;
+    color: #fe6333;
     font-weight: 700;
     font-size: 18px;
 }
@@ -89,11 +89,11 @@
 .add-member-form div p {
     position: absolute;
     font-size: 12px;
-    color:red;
+    color:#fe6333;
     bottom: -8px;
     left: 10px;
 }
-.add-member-form div input {
+.add-member-form div input, .search-input input {
     outline: none;
     width: 100%;
     padding: 5px 10px;

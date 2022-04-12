@@ -65,7 +65,7 @@ function App() {
                                 <h4>{item.name}</h4>
                                 <div><span>${item.price}</span><span>order x84</span></div>
                               </div>
-                              <img src="https://d2v79rrf7hys7i.cloudfront.net/xhtml/images/menu/Untitled-1.jpg" alt="/" />
+                              <img src={item.image} alt="/" />
                             </li>
                   })}
                 </ul>
@@ -79,7 +79,7 @@ function App() {
                   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                   datasets: [
                     {
-                      data: [166, 121, 198, 146, 310, 280, 133, 120, 99, 178, 150, 269, 111],
+                      data: [210, 121, 178, 90, 156, 110, 133, 120, 99, 78, 150, 129, 111],
                       label: "Khách hàng",
                       borderColor: "#3e95cd",
                       fill: false
@@ -110,7 +110,7 @@ function App() {
                   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                   datasets: [
                     {
-                      data: [166, 121, 198, 146, 310, 280, 133, 120, 99, 178, 150, 269, 111],
+                      data: [250, 164, 220, 146, 240, 180, 190, 240, 199, 178, 300, 269, 310],
                       label: "Đơn đặt hàng",
                       borderColor: "#8e5ea2",
                       fill: false
@@ -141,13 +141,13 @@ function App() {
                   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                   datasets: [
                     {
-                      data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734, 388, 200],
+                      data: [168, 170, 178, 190, 250, 248, 247, 275, 234, 234, 188, 100],
                       label: "Doanh thu ($)",
                       borderColor: "red",
                       fill: false
                     },
                     {
-                      data: [68, 70, 78, 90, 37, 76, 48, 47, 75, 34, 88, 20],
+                      data: [68, 70, 78, 90, 140, 158, 148, 147, 75, 134, 88, 70],
                       label: "Chi phí ($)",
                       borderColor: "#3cba9f",
                       fill: false
@@ -182,21 +182,28 @@ function App() {
                   ],
                   datasets: [
                     {
-                      label: "Population (millions)",
                       backgroundColor: [
-                        "#3cba9f",
-                        "#e8c3b9",
-                        "#c45850"
+                        "#d72241",
+                        "#1c71d3",
+                        "#316b81"
                       ],
-                      data: [734, 784, 433]
+                      data: [30, 19, 10]
                     }
                   ]
                 }}
                 option={{
+                  title: {
+                    display: true,
+                    text: "Biểu đồ dịch vụ"
+                  },
+                  legend: {
+                    display: true,
+                    position: "bottom"
+                  },
                   plugins: {
                     title: {
                         display: true,
-                        text: 'Nguồn doanh thu'
+                        text: 'Biểu đồ dịch vụ'
                     }
                   }
                 }}
@@ -215,18 +222,26 @@ function App() {
                       label: "Chi phí",
                       backgroundColor: [
                         "#3cba9f",
-                        "#e8c3b9",
-                        "#c45850"
+                        "#f5e038",
+                        "#316b81"
                       ],
-                      data: [734, 784, 433]
+                      data: [734, 584, 133]
                     }
                   ]
                 }}
                 option={{
+                  title: {
+                    display: true,
+                    text: "Biểu đồ chi phí"
+                  },
+                  legend: {
+                    display: true,
+                    position: "bottom"
+                  },
                   plugins: {
                     title: {
                         display: true,
-                        text: 'Chi phí'
+                        text: 'Biểu đồ chi phí'
                     }
                   }
                 }}

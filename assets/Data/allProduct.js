@@ -1,4 +1,4 @@
-let bunpho = [
+let data = [
     {
         id:"0",
         type_prd:"bunpho",
@@ -99,9 +99,7 @@ let bunpho = [
         image:"../../assets/img/product/bunpho/BC.png",
     },
 
-]
 
-let fastfood = [
     {
         id:"11",
         type_prd:"fastfood",
@@ -210,9 +208,9 @@ let fastfood = [
         price:"10",
         image:"../../assets/img/product/Fastfood/khoaitaychien.png",
     },
-]
 
-let giavi = [
+
+
     {
         id:"23",
         type_prd:"giavi",
@@ -314,9 +312,7 @@ let giavi = [
         image:"../../assets/img/product/giavi/gia-vi-au-ot-Cayenne.jpg",
     },
 
-]
 
-let food = [
     {
         id:"34",
         type_prd:"food",
@@ -434,9 +430,8 @@ let food = [
         price:"30",
         image:"../../assets/img/product/doan/hotdog.jpg",
     },
-]
 
-let drink = [
+
     {
         id:"47",
         type_prd:"drink",
@@ -545,9 +540,8 @@ let drink = [
         price:"15",
         image:"../../assets/img/product/drink/tradaocamsa.jpg",
     },
-]
 
-let cake = [
+
     {
         id:"59",
         type_prd:"cake",
@@ -668,9 +662,6 @@ let cake = [
         image:"../../assets/img/product/cake/Cake-Socola-04.png",
     },
 
-]
-
-let comhop = [
     {
         id:"71",
         type_prd:"comhop",
@@ -739,123 +730,5 @@ let comhop = [
         name:"Cơm đậu thịt sốt cà chua",
         adress:"Long Bien, Ha Noi",
         image:"../../assets/img/product/com/comthitdauxotcachua.jpg",
-    },
-]
-
-
-let listgood = [
-    {
-        id:"48",
-        type_prd:"drink",
-        type:"Đồ uống",
-        name:"Bạc xỉu cốt dừa",
-        address:"Đại học Thuỷ Lợi",
-        price:"22",
-        image:"../../assets/img/product/drink/bacxiucotdua.jpg",
-    },
-
-    {   
-        id:"76",
-        type_prd:"comhop",
-        type:"Cơm hộp",
-        price:"30",
-        name:"Cơm gà chiên nước mắm",
-        adress:"Long Bien, Ha Noi",
-        image:"../../assets/img/product/com/comgachiennuocmam.jpg",
-    },
-    {
-        id:"49",
-        type_prd:"drink",
-        type:"Đồ uống",
-        name:"Trà sữa trân châu",
-        adress:"Đại học Thuỷ Lợi",
-        price:"15",
-        image:"../../assets/img/product/drink/trasua.jpg",
-    },
-    {
-        id:"21",
-        type_prd:"fastfood",
-        type:"Fast food",
-        name:"bánh hot dog mỹ",
-        adress:"Đại học Thủy Lợi",
-        price:"35",
-        image:"../../assets/img/product/Fastfood/banhhotdogmy.png",
-    },
-    {
-        id:"22",
-        type_prd:"fastfood",
-        type:"Fast food",
-        name:"Khoai tây chiên",
-        adress:"Đại học Thủy Lợi",
-        price:"10",
-        image:"../../assets/img/product/Fastfood/khoaitaychien.png",
-    },
-    {
-        id:"50",
-        type_prd:"drink",
-        type:"Đồ uống",
-        name:"Cà phê đen",
-        adress:"Đại học Thuỷ Lợi",
-        price:"15",
-        image:"../../assets/img/product/drink/blackcofe.jpg",
-    },
-]
-
-
-let listsale = [
-    {
-        id:"68",
-        type_prd:"cake",
-        type:"Bánh ngọt",
-        price:"22",
-        name:"CAPUCCINO",
-        adress:"Đại học Thuỷ Lợi",
-        image:"../../assets/img/product/cake/Cake-Socola-02.png",
-    },
-
-    {
-        id:"69",
-        type_prd:"cake",
-        type:"Bánh ngọt",
-        price:"22",
-        name:"TIRAMISU",
-        adress:"Đại học Thuỷ Lợi",
-        image:"../../assets/img/product/cake/Cake-Socola-03.png",
-    },
-    {
-        id:"02",
-        type_prd:"bunpho",
-        type:"Bún phở",
-        name:"Phở Cuốn",
-        adress:"Đại học thủy lợi",
-        price:"35",
-        image:"../../assets/img/product/bunpho/Pcuan.png",
-    },
-    {
-        id:"03",
-        type_prd:"bunpho",
-        type:"Bún phở",
-        name:"Phở Bò",
-        adress:"Đại học thủy lợi",
-        price:"35",
-        image:"../../assets/img/product/bunpho/PB.png",
-    },
-    {
-        id:"17",
-        type_prd:"fastfood",
-        type:"Fast food",
-        name:"hamburger gà",
-        adress:"Đại học Thủy Lợi",
-        price:"30",
-        image:"../../assets/img/product/Fastfood/hamburger_ga.png",
-    },
-    {
-        id:"18",
-        type_prd:"fastfood",
-        type:"Fast food",
-        name:"Hot dog phô mai hàn quốc",
-        adress:"Đại học Thủy Lợi",
-        price:"15",
-        image:"../../assets/img/product/Fastfood/hotdogphomaiHQ.png",
     },
 ]

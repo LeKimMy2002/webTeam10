@@ -28,7 +28,7 @@ const App = () => {
             return i >= start && i < end;
         })
     )
-  }, [page])
+  }, [page, limit])
 
   const handleChangeLimit = dataKey => {
     setPage(1);
