@@ -71,7 +71,7 @@
     color: var(--primary-color);
 }
 .add-new-blog a {
-    border: 2px solid red;
+    border: 2px solid #fe6333;
     background-color: #FFF;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -80,6 +80,6 @@
     color: #111;
 }
 .add-new-blog a:hover {
-    background-color: red;
+    background-color: #fe6333;
     color: #FFF;
 }
