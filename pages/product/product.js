@@ -64,7 +64,7 @@ function getlocalPRD(n) {
 
 
 let NewArray = [];
-var typeArray = localStorage.getItem("mytype");
+var typeArray = localStorage.getItem("mytype") === null ? "Tất cả" : localStorage.getItem("mytype");
 function getArrayPRD() {
     for(var i = 0; i < data.length; i++) {
         if(data[i].type_prd === typeArray) {
