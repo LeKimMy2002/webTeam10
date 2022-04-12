@@ -118,17 +118,18 @@ loginBtn.addEventListener("click", function() {
         if(!checkUserName.test(`${username.value}`) || !checkPassword.test(`${password.value}`)) {
             conguration.innerHTML = `Sai tài khoản hoặc mật khẩu`;
             console.log(username.value, password.value);
-        }   
+        } 
+        else if(username.value === "admin" && password.value === "Admin123456") {
+            localStorage.removeItem("userid")
+            localStorage.setItem("accept", true)
+            window.location="https://gocookadmin.netlify.app/";
+        }  
         else if(username.value === account[i].username && password.value === account[i].passwword) {
             localStorage.setItem("userid", account[i].id)
             checkvalue = true;
         }
-        else if(username.value === "admin" && password.value === "admin123456") {
-            localStorage.removeItem("userid")
-            window.location.href = '../../pages/admin/public/index.html'
-        }
         else {
-            conguration.style.display = "none"
+            conguration.style.display = "Sai tài khoản hoặc mật khẩu"
         }
     }
 

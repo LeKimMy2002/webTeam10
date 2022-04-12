@@ -72,7 +72,6 @@ li {
   background-color:#fff;
   z-index: 100;
   border-radius: 10px;
-  /* animation: ZoomOut 0.5s ease; */
 }
 .modal-box img {
   height: 220px;

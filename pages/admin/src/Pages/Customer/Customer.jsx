@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from "../../Components/Header/Header";
-import Table from "../../Components/Table/KH"
+import Table from "../../Components/Table/customerTable"
 
 const Customer = () => {
   return (
     <>
     <div className="content">
-      <Header title="Khách hàng"/>
+      <Header title="Customer"/>
       <div className="box">
         <Table />
       </div>
