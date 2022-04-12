@@ -4,7 +4,7 @@ function mylist(obj, array ,content) {
             const item = document.createElement("DIV")
             item.classList.add("item-product","col-12","col-sm-4")
             item.innerHTML = `
-                <a onclick="getlocalPRD(${array[i].id})" href="./pages/detailProduct/detailProduct.html">
+                <a onclick="getlocalPRD(${array[i].id})" href="./pages/detailproduct/detailproduct.html">
                     <div><img src='${array[i].image}' alt="/"></div>
                     <div class="infor-restaurant">
                         <h4>${array[i].name}</h4>
