@@ -99,8 +99,8 @@ let account = [
     {
         id: 2,
         name:"Nam dep trai",
-        username:"duynamchimto",
-        passwword:"Namchimto2002",
+        username:"duynambungto",
+        passwword:"Nambungto2002",
     }
 ]
 

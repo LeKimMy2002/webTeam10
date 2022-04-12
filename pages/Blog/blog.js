@@ -56,7 +56,7 @@ function hotpost(array) {
                     <img src="${array[i].image_1}" alt="/">
                 </div>
                 <div>
-                    <a href='../detailBlog/detailBlog.html' onclick='detailspost(${array[i].id})'>${array[i].namepost}</a>
+                    <a href='../detailblog/detailblog.html' onclick='detailspost(${array[i].id})'>${array[i].namepost}</a>
                     <p>${array[i].description}</p>
                     <span><i class="far fa-eye"></i><span>${array[i].view}</span></span>
                 </div>
