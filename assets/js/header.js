@@ -6,7 +6,7 @@ if(header) {
         <div class="header-box flex-elm">
             <a href="/" class="header-logo flex-elm">
                 <img src="../../assets/img/logo.svg" alt="/" />
-                <span>Go<span class="food-text">Food</span></span>
+                <span>Go<span class="food-text">Cook</span></span>
             </a>
             <ul class="header-menu myMenu">
                 <span class="close-menu" id="close-menu"><i class="fas fa-times"></i></span>

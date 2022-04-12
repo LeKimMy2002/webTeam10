@@ -104,7 +104,7 @@
 .c100.p99 .fill,
 .c100.p100 .fill {
   position: absolute;
-  border: 0.08em solid red;
+  border: 0.08em solid #fe6333;
   width: 0.84em;
   height: 0.84em;
   clip: rect(0em, 0.5em, 1em, 0em);
